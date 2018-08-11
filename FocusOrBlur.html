@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script language="JavaScript">
+    function checkDate() {
+        var date1=document.getElementById("testdate").value;
+        if(date1.match("^\\d{8}$")==null){
+            alert("wrong");
+        }
+        else {alert("right")}
+    }
+</script>
+<body>
+ 请输入一个八位数字<input type="text" id="testdate" onblur="checkDate()";>
+</body>
+</html>

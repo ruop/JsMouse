@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script language="JavaScript">
+    function isDelete() {
+        var isdelete=window.confirm();
+       if(isdelete){return true;}
+       else{return false;}
+    }
+</script>
+<body>
+<form action="delete" onsubmit="return isDelete();">
+姓名：小明 年龄：23 学校： 哈尔滨金融学院
+    <input type="submit" value="删除">
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script language="JavaScript">
+    function  mouseovertest() {
+
+        document.getElementById("info").value="鼠标在输入框上";}
+    function mouseoverttest() {
+        document.getElementById("info").value="鼠标不在框上";
+
+    }
+
+</script>
+<body>
+<input type="text" id="info"  onmouseover="mouseovertest();" onmouseout="mouseoverttest()";/>
+
+
+</body>
+</html>

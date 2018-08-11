@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script language="JavaScript">
+    function submitform(e) {
+        if(e.keyCode){
+            if(e.keyCode==13){document.forms(0).submit();}
+        else{if(e.while==13){document.forms(0).submit();}}
+        }
+    }
+</script>
+<body>
+没有按钮的表单 用回车键提交
+<form action="login">
+    <input type="text" name="username" onkeypress="submitform(event);"/>
+</form>
+</body>
+</html>
